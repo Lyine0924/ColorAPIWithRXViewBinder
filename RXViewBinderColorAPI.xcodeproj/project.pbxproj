@@ -1,0 +1,803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		518626CFF294BB1705011A1A /* Pods_RXViewBinderColorAPI_RXViewBinderColorAPIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A49ADC7E96DD79AF4FD2B41 /* Pods_RXViewBinderColorAPI_RXViewBinderColorAPIUITests.framework */; };
+		C93A414F9D115A5DE4CADD0B /* Pods_RXViewBinderColorAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AFDFA038D5960743028C07 /* Pods_RXViewBinderColorAPITests.framework */; };
+		CC6AC5C1512329F3BAA5BF25 /* Pods_RXViewBinderColorAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C615F7D6A3CD57A978E4F7B /* Pods_RXViewBinderColorAPI.framework */; };
+		EE2FD829248CCE0800EC2E51 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2FD828248CCE0800EC2E51 /* ColorCell.swift */; };
+		EE2FD82B248CCE2600EC2E51 /* ColorCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2FD82A248CCE2600EC2E51 /* ColorCellViewModel.swift */; };
+		EE2FD82D248CD1F200EC2E51 /* MainToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2FD82C248CD1F200EC2E51 /* MainToolBar.swift */; };
+		EE2FD833248CDA2100EC2E51 /* MainViewModelViewBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2FD832248CDA2100EC2E51 /* MainViewModelViewBinder.swift */; };
+		EE65A0AB248CC7F3007337AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65A0AA248CC7F3007337AB /* AppDelegate.swift */; };
+		EE65A0AF248CC7F3007337AB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65A0AE248CC7F3007337AB /* MainViewController.swift */; };
+		EE65A0B4248CC7F6007337AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE65A0B3248CC7F6007337AB /* Assets.xcassets */; };
+		EE65A0B7248CC7F6007337AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE65A0B5248CC7F6007337AB /* LaunchScreen.storyboard */; };
+		EE65A0C2248CC7F7007337AB /* RXViewBinderColorAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65A0C1248CC7F7007337AB /* RXViewBinderColorAPITests.swift */; };
+		EE65A0CD248CC7F7007337AB /* RXViewBinderColorAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65A0CC248CC7F7007337AB /* RXViewBinderColorAPIUITests.swift */; };
+		EE65A0DC248CC93C007337AB /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65A0DB248CC93C007337AB /* UIColor+.swift */; };
+		EE65A0DE248CC953007337AB /* ColorLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65A0DD248CC953007337AB /* ColorLists.swift */; };
+		EE65A0E1248CC978007337AB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65A0E0248CC978007337AB /* Color.swift */; };
+		EE65A0E3248CC996007337AB /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65A0E2248CC996007337AB /* JSON.swift */; };
+		EE65A0E5248CC9EB007337AB /* APIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65A0E4248CC9EB007337AB /* APIType.swift */; };
+		EE65A0E7248CCBD7007337AB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65A0E6248CCBD7007337AB /* NetworkService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE65A0BE248CC7F7007337AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE65A09F248CC7F3007337AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE65A0A6248CC7F3007337AB;
+			remoteInfo = RXViewBinderColorAPI;
+		};
+		EE65A0C9248CC7F7007337AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE65A09F248CC7F3007337AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE65A0A6248CC7F3007337AB;
+			remoteInfo = RXViewBinderColorAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03AFDFA038D5960743028C07 /* Pods_RXViewBinderColorAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXViewBinderColorAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		071ED76AD0A7C5342AF55C2E /* Pods-RXViewBinderColorAPI-RXViewBinderColorAPIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXViewBinderColorAPI-RXViewBinderColorAPIUITests.debug.xcconfig"; path = "Target Support Files/Pods-RXViewBinderColorAPI-RXViewBinderColorAPIUITests/Pods-RXViewBinderColorAPI-RXViewBinderColorAPIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0888BFE69EB008F36FFBE333 /* Pods-RXViewBinderColorAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXViewBinderColorAPI.release.xcconfig"; path = "Target Support Files/Pods-RXViewBinderColorAPI/Pods-RXViewBinderColorAPI.release.xcconfig"; sourceTree = "<group>"; };
+		5A49ADC7E96DD79AF4FD2B41 /* Pods_RXViewBinderColorAPI_RXViewBinderColorAPIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXViewBinderColorAPI_RXViewBinderColorAPIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C615F7D6A3CD57A978E4F7B /* Pods_RXViewBinderColorAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXViewBinderColorAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B68A94E2ED0736573039954 /* Pods-RXViewBinderColorAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXViewBinderColorAPITests.release.xcconfig"; path = "Target Support Files/Pods-RXViewBinderColorAPITests/Pods-RXViewBinderColorAPITests.release.xcconfig"; sourceTree = "<group>"; };
+		8CB044365AE90837DB899900 /* Pods-RXViewBinderColorAPI-RXViewBinderColorAPIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXViewBinderColorAPI-RXViewBinderColorAPIUITests.release.xcconfig"; path = "Target Support Files/Pods-RXViewBinderColorAPI-RXViewBinderColorAPIUITests/Pods-RXViewBinderColorAPI-RXViewBinderColorAPIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9A9878DEDF7022C166184D7A /* Pods-RXViewBinderColorAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXViewBinderColorAPITests.debug.xcconfig"; path = "Target Support Files/Pods-RXViewBinderColorAPITests/Pods-RXViewBinderColorAPITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E4B7861DC2C919CEFD6485F /* Pods-RXViewBinderColorAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXViewBinderColorAPI.debug.xcconfig"; path = "Target Support Files/Pods-RXViewBinderColorAPI/Pods-RXViewBinderColorAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		EE2FD828248CCE0800EC2E51 /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
+		EE2FD82A248CCE2600EC2E51 /* ColorCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCellViewModel.swift; sourceTree = "<group>"; };
+		EE2FD82C248CD1F200EC2E51 /* MainToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainToolBar.swift; sourceTree = "<group>"; };
+		EE2FD82E248CD35D00EC2E51 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		EE2FD832248CDA2100EC2E51 /* MainViewModelViewBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelViewBinder.swift; sourceTree = "<group>"; };
+		EE65A0A7248CC7F3007337AB /* RXViewBinderColorAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RXViewBinderColorAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE65A0AA248CC7F3007337AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE65A0AE248CC7F3007337AB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EE65A0B3248CC7F6007337AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE65A0B6248CC7F6007337AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE65A0B8248CC7F6007337AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE65A0BD248CC7F7007337AB /* RXViewBinderColorAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RXViewBinderColorAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE65A0C1248CC7F7007337AB /* RXViewBinderColorAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXViewBinderColorAPITests.swift; sourceTree = "<group>"; };
+		EE65A0C3248CC7F7007337AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE65A0C8248CC7F7007337AB /* RXViewBinderColorAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RXViewBinderColorAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE65A0CC248CC7F7007337AB /* RXViewBinderColorAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXViewBinderColorAPIUITests.swift; sourceTree = "<group>"; };
+		EE65A0CE248CC7F7007337AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE65A0DB248CC93C007337AB /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		EE65A0DD248CC953007337AB /* ColorLists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorLists.swift; sourceTree = "<group>"; };
+		EE65A0E0248CC978007337AB /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		EE65A0E2248CC996007337AB /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		EE65A0E4248CC9EB007337AB /* APIType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIType.swift; sourceTree = "<group>"; };
+		EE65A0E6248CCBD7007337AB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE65A0A4248CC7F3007337AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC6AC5C1512329F3BAA5BF25 /* Pods_RXViewBinderColorAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE65A0BA248CC7F7007337AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C93A414F9D115A5DE4CADD0B /* Pods_RXViewBinderColorAPITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE65A0C5248CC7F7007337AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				518626CFF294BB1705011A1A /* Pods_RXViewBinderColorAPI_RXViewBinderColorAPIUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0096833D317E570F545D6388 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E4B7861DC2C919CEFD6485F /* Pods-RXViewBinderColorAPI.debug.xcconfig */,
+				0888BFE69EB008F36FFBE333 /* Pods-RXViewBinderColorAPI.release.xcconfig */,
+				071ED76AD0A7C5342AF55C2E /* Pods-RXViewBinderColorAPI-RXViewBinderColorAPIUITests.debug.xcconfig */,
+				8CB044365AE90837DB899900 /* Pods-RXViewBinderColorAPI-RXViewBinderColorAPIUITests.release.xcconfig */,
+				9A9878DEDF7022C166184D7A /* Pods-RXViewBinderColorAPITests.debug.xcconfig */,
+				8B68A94E2ED0736573039954 /* Pods-RXViewBinderColorAPITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		659F0FCE23D82B0D78954E61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C615F7D6A3CD57A978E4F7B /* Pods_RXViewBinderColorAPI.framework */,
+				5A49ADC7E96DD79AF4FD2B41 /* Pods_RXViewBinderColorAPI_RXViewBinderColorAPIUITests.framework */,
+				03AFDFA038D5960743028C07 /* Pods_RXViewBinderColorAPITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE2FD827248CCDF800EC2E51 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EE2FD828248CCE0800EC2E51 /* ColorCell.swift */,
+				EE2FD82A248CCE2600EC2E51 /* ColorCellViewModel.swift */,
+				EE2FD82C248CD1F200EC2E51 /* MainToolBar.swift */,
+				EE65A0AE248CC7F3007337AB /* MainViewController.swift */,
+				EE2FD82E248CD35D00EC2E51 /* MainViewModel.swift */,
+				EE2FD832248CDA2100EC2E51 /* MainViewModelViewBinder.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EE65A09E248CC7F3007337AB = {
+			isa = PBXGroup;
+			children = (
+				EE65A0A9248CC7F3007337AB /* RXViewBinderColorAPI */,
+				EE65A0C0248CC7F7007337AB /* RXViewBinderColorAPITests */,
+				EE65A0CB248CC7F7007337AB /* RXViewBinderColorAPIUITests */,
+				EE65A0A8248CC7F3007337AB /* Products */,
+				0096833D317E570F545D6388 /* Pods */,
+				659F0FCE23D82B0D78954E61 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EE65A0A8248CC7F3007337AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE65A0A7248CC7F3007337AB /* RXViewBinderColorAPI.app */,
+				EE65A0BD248CC7F7007337AB /* RXViewBinderColorAPITests.xctest */,
+				EE65A0C8248CC7F7007337AB /* RXViewBinderColorAPIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE65A0A9248CC7F3007337AB /* RXViewBinderColorAPI */ = {
+			isa = PBXGroup;
+			children = (
+				EE2FD827248CCDF800EC2E51 /* Main */,
+				EE65A0DF248CC968007337AB /* Model */,
+				EE65A0DA248CC92A007337AB /* Utility */,
+				EE65A0AA248CC7F3007337AB /* AppDelegate.swift */,
+				EE65A0B3248CC7F6007337AB /* Assets.xcassets */,
+				EE65A0B5248CC7F6007337AB /* LaunchScreen.storyboard */,
+				EE65A0B8248CC7F6007337AB /* Info.plist */,
+			);
+			path = RXViewBinderColorAPI;
+			sourceTree = "<group>";
+		};
+		EE65A0C0248CC7F7007337AB /* RXViewBinderColorAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE65A0C1248CC7F7007337AB /* RXViewBinderColorAPITests.swift */,
+				EE65A0C3248CC7F7007337AB /* Info.plist */,
+			);
+			path = RXViewBinderColorAPITests;
+			sourceTree = "<group>";
+		};
+		EE65A0CB248CC7F7007337AB /* RXViewBinderColorAPIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE65A0CC248CC7F7007337AB /* RXViewBinderColorAPIUITests.swift */,
+				EE65A0CE248CC7F7007337AB /* Info.plist */,
+			);
+			path = RXViewBinderColorAPIUITests;
+			sourceTree = "<group>";
+		};
+		EE65A0DA248CC92A007337AB /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EE65A0DD248CC953007337AB /* ColorLists.swift */,
+				EE65A0DB248CC93C007337AB /* UIColor+.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		EE65A0DF248CC968007337AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE65A0E0248CC978007337AB /* Color.swift */,
+				EE65A0E2248CC996007337AB /* JSON.swift */,
+				EE65A0E4248CC9EB007337AB /* APIType.swift */,
+				EE65A0E6248CCBD7007337AB /* NetworkService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE65A0A6248CC7F3007337AB /* RXViewBinderColorAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE65A0D1248CC7F7007337AB /* Build configuration list for PBXNativeTarget "RXViewBinderColorAPI" */;
+			buildPhases = (
+				438EC37EE58AF5B526E78CB8 /* [CP] Check Pods Manifest.lock */,
+				EE65A0A3248CC7F3007337AB /* Sources */,
+				EE65A0A4248CC7F3007337AB /* Frameworks */,
+				EE65A0A5248CC7F3007337AB /* Resources */,
+				C72CFBF631D7960E38C5785C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RXViewBinderColorAPI;
+			productName = RXViewBinderColorAPI;
+			productReference = EE65A0A7248CC7F3007337AB /* RXViewBinderColorAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE65A0BC248CC7F7007337AB /* RXViewBinderColorAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE65A0D4248CC7F7007337AB /* Build configuration list for PBXNativeTarget "RXViewBinderColorAPITests" */;
+			buildPhases = (
+				DD53EAA679A1132FC33BE0FC /* [CP] Check Pods Manifest.lock */,
+				EE65A0B9248CC7F7007337AB /* Sources */,
+				EE65A0BA248CC7F7007337AB /* Frameworks */,
+				EE65A0BB248CC7F7007337AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE65A0BF248CC7F7007337AB /* PBXTargetDependency */,
+			);
+			name = RXViewBinderColorAPITests;
+			productName = RXViewBinderColorAPITests;
+			productReference = EE65A0BD248CC7F7007337AB /* RXViewBinderColorAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE65A0C7248CC7F7007337AB /* RXViewBinderColorAPIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE65A0D7248CC7F7007337AB /* Build configuration list for PBXNativeTarget "RXViewBinderColorAPIUITests" */;
+			buildPhases = (
+				41DF2762B010A751EE3685B1 /* [CP] Check Pods Manifest.lock */,
+				EE65A0C4248CC7F7007337AB /* Sources */,
+				EE65A0C5248CC7F7007337AB /* Frameworks */,
+				EE65A0C6248CC7F7007337AB /* Resources */,
+				9FB3FBAC8103A39C81AA6EF7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE65A0CA248CC7F7007337AB /* PBXTargetDependency */,
+			);
+			name = RXViewBinderColorAPIUITests;
+			productName = RXViewBinderColorAPIUITests;
+			productReference = EE65A0C8248CC7F7007337AB /* RXViewBinderColorAPIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE65A09F248CC7F3007337AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Lyine;
+				TargetAttributes = {
+					EE65A0A6248CC7F3007337AB = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					EE65A0BC248CC7F7007337AB = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = EE65A0A6248CC7F3007337AB;
+					};
+					EE65A0C7248CC7F7007337AB = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = EE65A0A6248CC7F3007337AB;
+					};
+				};
+			};
+			buildConfigurationList = EE65A0A2248CC7F3007337AB /* Build configuration list for PBXProject "RXViewBinderColorAPI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE65A09E248CC7F3007337AB;
+			productRefGroup = EE65A0A8248CC7F3007337AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE65A0A6248CC7F3007337AB /* RXViewBinderColorAPI */,
+				EE65A0BC248CC7F7007337AB /* RXViewBinderColorAPITests */,
+				EE65A0C7248CC7F7007337AB /* RXViewBinderColorAPIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE65A0A5248CC7F3007337AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE65A0B7248CC7F6007337AB /* LaunchScreen.storyboard in Resources */,
+				EE65A0B4248CC7F6007337AB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE65A0BB248CC7F7007337AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE65A0C6248CC7F7007337AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41DF2762B010A751EE3685B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RXViewBinderColorAPI-RXViewBinderColorAPIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		438EC37EE58AF5B526E78CB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RXViewBinderColorAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FB3FBAC8103A39C81AA6EF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RXViewBinderColorAPI-RXViewBinderColorAPIUITests/Pods-RXViewBinderColorAPI-RXViewBinderColorAPIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RXViewBinderColorAPI-RXViewBinderColorAPIUITests/Pods-RXViewBinderColorAPI-RXViewBinderColorAPIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RXViewBinderColorAPI-RXViewBinderColorAPIUITests/Pods-RXViewBinderColorAPI-RXViewBinderColorAPIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C72CFBF631D7960E38C5785C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RXViewBinderColorAPI/Pods-RXViewBinderColorAPI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RXViewBinderColorAPI/Pods-RXViewBinderColorAPI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RXViewBinderColorAPI/Pods-RXViewBinderColorAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD53EAA679A1132FC33BE0FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RXViewBinderColorAPITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE65A0A3248CC7F3007337AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE65A0E5248CC9EB007337AB /* APIType.swift in Sources */,
+				EE65A0AF248CC7F3007337AB /* MainViewController.swift in Sources */,
+				EE2FD829248CCE0800EC2E51 /* ColorCell.swift in Sources */,
+				EE65A0E7248CCBD7007337AB /* NetworkService.swift in Sources */,
+				EE2FD833248CDA2100EC2E51 /* MainViewModelViewBinder.swift in Sources */,
+				EE65A0DE248CC953007337AB /* ColorLists.swift in Sources */,
+				EE65A0AB248CC7F3007337AB /* AppDelegate.swift in Sources */,
+				EE2FD82D248CD1F200EC2E51 /* MainToolBar.swift in Sources */,
+				EE65A0E3248CC996007337AB /* JSON.swift in Sources */,
+				EE65A0E1248CC978007337AB /* Color.swift in Sources */,
+				EE2FD82B248CCE2600EC2E51 /* ColorCellViewModel.swift in Sources */,
+				EE65A0DC248CC93C007337AB /* UIColor+.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE65A0B9248CC7F7007337AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE65A0C2248CC7F7007337AB /* RXViewBinderColorAPITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE65A0C4248CC7F7007337AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE65A0CD248CC7F7007337AB /* RXViewBinderColorAPIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE65A0BF248CC7F7007337AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE65A0A6248CC7F3007337AB /* RXViewBinderColorAPI */;
+			targetProxy = EE65A0BE248CC7F7007337AB /* PBXContainerItemProxy */;
+		};
+		EE65A0CA248CC7F7007337AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE65A0A6248CC7F3007337AB /* RXViewBinderColorAPI */;
+			targetProxy = EE65A0C9248CC7F7007337AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE65A0B5248CC7F6007337AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE65A0B6248CC7F6007337AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE65A0CF248CC7F7007337AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE65A0D0248CC7F7007337AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE65A0D2248CC7F7007337AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E4B7861DC2C919CEFD6485F /* Pods-RXViewBinderColorAPI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = RXViewBinderColorAPI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linne.RXViewBinderColorAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EE65A0D3248CC7F7007337AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0888BFE69EB008F36FFBE333 /* Pods-RXViewBinderColorAPI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = RXViewBinderColorAPI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linne.RXViewBinderColorAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EE65A0D5248CC7F7007337AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A9878DEDF7022C166184D7A /* Pods-RXViewBinderColorAPITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83T5257BF7;
+				INFOPLIST_FILE = RXViewBinderColorAPITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linne.RXViewBinderColorAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RXViewBinderColorAPI.app/RXViewBinderColorAPI";
+			};
+			name = Debug;
+		};
+		EE65A0D6248CC7F7007337AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B68A94E2ED0736573039954 /* Pods-RXViewBinderColorAPITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83T5257BF7;
+				INFOPLIST_FILE = RXViewBinderColorAPITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linne.RXViewBinderColorAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RXViewBinderColorAPI.app/RXViewBinderColorAPI";
+			};
+			name = Release;
+		};
+		EE65A0D8248CC7F7007337AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 071ED76AD0A7C5342AF55C2E /* Pods-RXViewBinderColorAPI-RXViewBinderColorAPIUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83T5257BF7;
+				INFOPLIST_FILE = RXViewBinderColorAPIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linne.RXViewBinderColorAPIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RXViewBinderColorAPI;
+			};
+			name = Debug;
+		};
+		EE65A0D9248CC7F7007337AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CB044365AE90837DB899900 /* Pods-RXViewBinderColorAPI-RXViewBinderColorAPIUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83T5257BF7;
+				INFOPLIST_FILE = RXViewBinderColorAPIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linne.RXViewBinderColorAPIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RXViewBinderColorAPI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE65A0A2248CC7F3007337AB /* Build configuration list for PBXProject "RXViewBinderColorAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE65A0CF248CC7F7007337AB /* Debug */,
+				EE65A0D0248CC7F7007337AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE65A0D1248CC7F7007337AB /* Build configuration list for PBXNativeTarget "RXViewBinderColorAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE65A0D2248CC7F7007337AB /* Debug */,
+				EE65A0D3248CC7F7007337AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE65A0D4248CC7F7007337AB /* Build configuration list for PBXNativeTarget "RXViewBinderColorAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE65A0D5248CC7F7007337AB /* Debug */,
+				EE65A0D6248CC7F7007337AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE65A0D7248CC7F7007337AB /* Build configuration list for PBXNativeTarget "RXViewBinderColorAPIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE65A0D8248CC7F7007337AB /* Debug */,
+				EE65A0D9248CC7F7007337AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE65A09F248CC7F3007337AB /* Project object */;
+}
