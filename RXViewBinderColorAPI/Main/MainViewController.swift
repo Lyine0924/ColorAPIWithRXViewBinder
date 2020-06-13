@@ -54,14 +54,6 @@ class MainViewController: UIViewController, BindView {
 
         toolBar.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(toolbar)
-
-        /*
-        NSLayoutConstraint.activate([
-            toolbar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            toolbar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            toolbar.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
-        */
         
         toolbar.snp.makeConstraints {
             $0.leading.equalTo(view.snp.leading)
@@ -70,27 +62,12 @@ class MainViewController: UIViewController, BindView {
             $0.top.equalTo(view.safeAreaLayoutGuide.snp.bottom).offset(-44).priority(.high)
         }
 
-        /*
-        let topAnchor = toolBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -44)
-        topAnchor.priority = .defaultHigh
-        topAnchor.isActive = true
-        */
-
         // tableView
         let tableView = UITableView()
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
         self.tableView = tableView
-
-        /**
-         NSLayoutConstraint.activate([
-             tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-             tableView.bottomAnchor.constraint(equalTo: toolbar.topAnchor),
-             tableView.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor),
-             tableView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor)
-         ])
-         */
         
         tableView.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)
@@ -113,15 +90,6 @@ class MainViewController: UIViewController, BindView {
         view.addSubview(indicator)
 
         indicator.translatesAutoresizingMaskIntoConstraints = true
-
-        /**
-         NSLayoutConstraint.activate([
-             indicator.widthAnchor.constraint(equalToConstant: 60),
-             indicator.heightAnchor.constraint(equalToConstant: 60),
-             indicator.centerXAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerXAnchor),
-             indicator.centerYAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerYAnchor)
-         ])
-         */
         
         indicator.snp.makeConstraints {
             $0.width.equalTo(60)
